@@ -10,12 +10,24 @@ void setup() {
 }
 
 void draw() {
-  float num = (float) g.nextGaussian();
+  float num = createNum();
   
   float sd = 3;
   float mean = width / 2;
   w.step(sd * num);
   w.render();
+}
+
+float createNum() {
+  while (true) {
+    float r1 = random(10);
+    float p = r1;
+    float r2 = random(10);
+    
+    if (r2 < r1) {
+      return r1;
+    }
+  }
 }
 
 class Walker {
@@ -29,8 +41,11 @@ class Walker {
   }
   
   void render() {
-    stroke(230);
-    point(x, y);
+    int colour1 = (int) random(255);
+    int colour2 = (int) random(255);
+    int colour3 = (int) random(255);
+    stroke(colour1, colour2, colour3);
+    ellipse(x, y, 40, 40);
   }
   
   void step(float num) {
