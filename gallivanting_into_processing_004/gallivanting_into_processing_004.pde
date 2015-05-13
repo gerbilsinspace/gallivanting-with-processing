@@ -2,7 +2,7 @@ import java.util.*;
 Random generator;
 
 void setup() {
-  size(1000, 1000);
+  size(640, 360);
   background(20);
   generator = new Random();
 }

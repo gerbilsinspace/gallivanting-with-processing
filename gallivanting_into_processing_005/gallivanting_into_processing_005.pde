@@ -3,7 +3,7 @@ Random g;
 Walker w;
 
 void setup() {
-  size(1000, 1000);
+  size(640, 360);
   background(20);
   w = new Walker();
   g = new Random();

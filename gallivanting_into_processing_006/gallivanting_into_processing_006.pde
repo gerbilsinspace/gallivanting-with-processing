@@ -3,7 +3,7 @@ Random g;
 Walker w;
 
 void setup() {
-  size(1000, 1000);
+  size(640, 360);
   background(20);
   w = new Walker();
   g = new Random();
@@ -41,9 +41,9 @@ class Walker {
   }
   
   void render() {
-    int colour1 = (int) random(255);
-    int colour2 = (int) random(255);
-    int colour3 = (int) random(255);
+    int colour1 = (int) random(180, 255);
+    int colour2 = (int) random(180, 255);
+    int colour3 = (int) random(180, 255);
     stroke(colour1, colour2, colour3);
     ellipse(x, y, 40, 40);
   }

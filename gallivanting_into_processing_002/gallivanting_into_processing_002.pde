@@ -8,7 +8,7 @@ class Walker {
   }
 
   void display() {
-    stroke(0);
+    stroke(230);
     point(x, y);
   }
 
@@ -51,7 +51,7 @@ Walker w;
 void setup() {
   size(640, 360);
   w = new Walker();
-  background(255);
+  background(20);
 }
 
 void draw() {
